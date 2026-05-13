@@ -1,0 +1,77 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+\geometry{left=25mm,right=15mm,top=20mm,bottom=20mm}
+\setlist{nosep}
+\emergencystretch=2em
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue
+}
+
+\newcommand{\ticket}[2]{%
+    \section{Билет #1. #2}
+}
+
+\newcommand{\includeticket}[1]{%
+    \clearpage
+    \input{tickets/ticket#1.tex}
+}
+
+\newenvironment{examplan}
+{\subsection*{Короткий план ответа}\begin{enumerate}}
+{\end{enumerate}}
+
+\newenvironment{important}
+{\subsection*{Что важно проговорить на экзамене}\begin{itemize}}
+{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+    {\Large\bfseries Конспект для подготовки к государственному экзамену магистерской программы «Интеллектуальные системы»}
+
+    \vspace{0.5em}
+    {\normalsize \today}
+\end{center}
+
+\tableofcontents
+\newpage
+
+\input{tickets/ticket01.tex}
+\includeticket{02}
+\includeticket{03}
+\includeticket{04}
+\includeticket{05}
+\includeticket{06}
+\includeticket{07}
+\includeticket{08}
+\includeticket{09}
+\includeticket{10}
+\includeticket{11}
+\includeticket{12}
+\includeticket{13}
+\includeticket{14}
+\includeticket{15}
+\includeticket{16}
+\includeticket{17}
+\includeticket{18}
+\includeticket{19}
+\includeticket{20}
+\includeticket{21}
+\includeticket{22}
+\includeticket{23}
+\includeticket{24}
+\includeticket{25}
+\includeticket{26}
+\includeticket{27}
+
+\end{document}

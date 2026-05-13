@@ -1,0 +1,35 @@
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.dvi
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.synctex.gz(busy)
+*.toc
+*.vrb
+missfont.log
+
+# Local drafts / backups
+*_old.pdf
+*.bak
+*.tmp
+*.swp
+~$*
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
